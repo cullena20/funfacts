@@ -2,12 +2,11 @@ import bs4
 import requests
 import db_facts
 
-conn = db_facts.connect()
-cur = conn.cursor()
-db_facts.create_table(conn)
-
 
 def main():
+    conn = db_facts.connect()
+    cur = conn.cursor()
+    db_facts.create_table(conn)
     html_url = "https://www.thefactsite.com/top-100-random-funny-facts/"
     html_text = requests.get(html_url).text
     soup = bs4.BeautifulSoup(html_text, "html.parser")

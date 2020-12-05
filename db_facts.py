@@ -1,7 +1,3 @@
-# template for sqlite3 database so i don't have to type this again every time
-# put information for table here
-# add more features here as needed
-
 import sqlite3
 import random
 

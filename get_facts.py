@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 import bs4
 import requests
 import db_facts
